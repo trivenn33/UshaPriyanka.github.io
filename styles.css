@@ -1,0 +1,123 @@
+/* Styles for the header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 50px; 
+}
+
+#company-title {
+    font-weight: bold;
+    margin-left: 120px;
+    color: blanchedalmond;
+    font-size: 40px;
+    
+}
+
+#survey-title {
+    font-weight: bold;
+    text-align: right;
+    margin-right: 120px;
+    color: blanchedalmond;
+    font-size: 40px;
+    
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    background-image: url('BackgroundImage.avif'); /* Replace with your image file */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: to prevent the image from scrolling */
+    
+}
+
+main {
+    flex: 1; 
+}
+
+
+#closing-notes {
+    text-align: justify;
+}
+table {
+    max-width: 960px;
+    margin: 20px 60px; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: transparent;
+}
+
+th, td {
+    text-align: center; 
+    padding: 8px; 
+    color: burlywood;
+}
+
+
+th {
+    color:darkgrey
+}
+td {
+    font-weight: bold; 
+    border-bottom: 1px solid #000;
+    text-shadow: 2px 2px 8px #000000;
+
+}
+
+tr:nth-child(even){
+    background-color: rgba(0, 0, 0, 0.1); 
+}
+
+
+.emoji-button {
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    transition: transform 0.1s; 
+}
+.emoji-button.clicked {
+    transform: scale(0.9); 
+}
+
+.emoji-button:active {
+    transform: scale(0.9); 
+}
+
+.progress-container {
+    margin: auto;
+    width: 25%;
+    background-color: #ddd;
+    text-align: center;
+  }
+  
+  .progress-bar {
+    width: 20%; 
+    height: 30px;
+    background-color: #4CAF50;
+    color: white;
+    line-height: 30px; 
+  }
+  .submit-btn {
+    display: block;
+    margin: 20px auto; 
+    padding: 10px 20px; 
+    background-color: #4CAF50; 
+    color: white; 
+    border: none;
+    cursor: pointer;
+    font-size: 16px; 
+  }
+  
+  
+

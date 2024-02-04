@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Satisfaction Survey</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <!-- You can add JavaScript here or link to an external .js file -->
+</head>
+<body>
+    <header>
+        <div id="company-title">ITFast</div>
+        <div id="survey-title">Employee Satisfaction Survey</div>
+    </header>
+    <main>
+        <table>
+            <!-- Table headers (if needed) -->
+            <tr>
+                <th>Please read the questions below and choose the best option suitable for your response </th>
+                <th>Excellent</th>
+                <th>Good</th>
+                <th>Fair</th>
+                <th>Poor</th>
+                <th>Very Bad</th>
+                
+            </tr>
+            <!-- Table rows and cells -->
+            <tr>
+                <td>To what extent is your physical work environment comfortable for you?</td>
+                <td><button class="emoji-button"onclick="toggleEmoji(this)">😃</button></td>
+                <td><button class="emoji-button"onclick="toggleEmoji(this)">😊</button></td>
+                <td><button class="emoji-button"onclick="toggleEmoji(this)">😐</button></td>
+                <td><button class="emoji-button"onclick="toggleEmoji(this)">😕</button></td>
+                <td><button class="emoji-button"onclick="toggleEmoji(this)">😞</button></td>
+            </tr>
+            <!-- Repeat for the number of questions -->
+            <!-- ... 14 more <tr> elements each with 6 <td> elements ... -->
+                <tr>
+                    <td>To what extent do you think the company's leadership is effective?</td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😃</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😊</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😐</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😕</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😞</button></td>
+                </tr>
+                <tr>
+                    <td>Regarding work-life balance, how would you rank the flexibility provided by ITFast? </td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😃</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😊</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😐</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😕</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😞</button></td>
+                </tr>
+                <tr>
+                    <td>How pleased are you with the chances you have for developing professionally?</td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😃</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😊</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😐</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😕</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😞</button></td>
+                </tr>
+                <tr>
+                    <td>Regarding the quality and accessibility of training materials, how would you rank them?</td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😃</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😊</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😐</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😕</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😞</button></td>
+                </tr>
+                <tr>
+                    <td>How satisfied are you with the recoginition you receive at work?</td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😃</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😊</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😐</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😕</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😞</button></td>
+                </tr>
+                <tr>
+                    <td>To what extent is ITFast's internal communication transparent and easy to understand?</td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😃</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😊</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😐</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😕</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😞</button></td>
+                </tr>
+                <tr>
+                    <td>How would you rank the collaboration and support you receive from colleauges</td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😃</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😊</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😐</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😕</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😞</button></td>
+                </tr>
+                <tr>
+                    <td>What sense of security do you now have in your job?</td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😃</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😊</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😐</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😕</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😞</button></td>
+                </tr>
+                <tr>
+                    <td>Taking your role and duties into account, how fair do you think your pay is?</td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😃</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😊</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😐</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😕</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😞</button></td>
+                </tr>
+                <tr>
+                    <td>Your present workload seems reasonable to you?</td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😃</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😊</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😐</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😕</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😞</button></td>
+                </tr>
+                <tr>
+                    <td>Regarding diversity and inclusion, how dedicated do you think the firm is?</td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😃</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😊</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😐</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😕</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😞</button></td>
+                </tr>
+                <tr>
+                    <td>How well do the ethics and values of the organization match your own?</td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😃</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😊</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😐</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😕</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😞</button></td>
+                </tr>
+                <tr>
+                    <td>How receptive is the organization, in your opinion, to employee input and action?</td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😃</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😊</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😐</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😕</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😞</button></td>
+                </tr>
+                <tr>
+                    <td>Please rate the effectivness of communication of the organization in conveying the updates and key decisions</td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😃</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😊</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😐</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😕</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😞</button></td>
+                </tr>
+                <tr>
+                    <td>How satisfied are you, all things considered, with your current position at ITFast?</td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😃</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😊</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😐</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😕</button></td>
+                    <td><button class="emoji-button"onclick="toggleEmoji(this)">😞</button></td>
+                </tr>
+        </table>
+        <div class="progress-container">
+            <div class="progress-bar" id="myProgressBar">Progress: 0%</div>
+        </div>        
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Submit Survey</button>
+            
+    </main>
+    <script src="javascript.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
